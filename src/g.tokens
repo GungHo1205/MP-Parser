@@ -1,0 +1,10 @@
+OP=1
+U=2
+LParen=3
+RParen=4
+E=5
+Terminal=6
+'U'=2
+'('=3
+')'=4
+'E'=5

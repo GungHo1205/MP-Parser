@@ -1,0 +1,45 @@
+grammar g;
+prule
+    : 'test' Digit
+    ;
+
+Digit
+    :   [0-9]
+    ;
+
+Number
+    :   Digit+
+    ;
+
+Letter
+    :   [a-z]
+    ;
+
+s
+    :   i | 'E'
+    ;
+
+a
+    :   Letter | Digit
+    ;
+
+d
+    :   h
+    ;
+
+//f
+//    :   f 'U' d | f 'U' 'E' | 'E' 'U' f | d | (f) | f 'U' (d) | '('f')''*' | f 'U' '('d')''*' | f 'U' '('d')''+' | f 'U' '('d')''?'
+//    ;
+
+i
+    :   d 'U' i | i 'U' 'E' | 'E' 'U' i | d | (i) | i 'U' (d) | '('i')''*' | i 'U' '('d')''*' | i 'U' '('d')''+' | i 'U' '('d')''?'
+    ;
+
+g
+    :   a'+' | a'*' | a'?' | a
+    ;
+
+h
+    :   g h | g
+    ;
+
